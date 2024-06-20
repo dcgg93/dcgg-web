@@ -1,9 +1,3 @@
-import {
-  HoverCardTrigger,
-  HoverCard,
-  HoverCardContent,
-} from "@radix-ui/react-hover-card";
-
 type MenuType = {
   title: string;
   router?: string;
@@ -32,25 +26,13 @@ const menuList: Array<MenuType> = [
   },
 ];
 
-const MenuListStyle = `
-  flex
-  flex-row
-`;
-
-const ListStyle = `
-  pt-3
-  text-md
-  hover:text-green-500
-  hover:underline
-  cursor-pointer
-  pr-5
-
-`;
 const MenuList = () => {
   return (
-    <ul className={MenuListStyle}>
+    <ul className="flex flex-row font-semibold">
       {menuList.map((list) => (
-        <li className={ListStyle}>{list.title}</li>
+        <li className="pt-3 pr-5 text-sm cursor-pointer hover:text-green-500 hover:underline">
+          {list.title}
+        </li>
       ))}
     </ul>
   );
