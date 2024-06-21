@@ -5,7 +5,7 @@ const AppLayout = ({ children }: ChildType) => {
   return (
     <>
       <Header>
-        <p className="font-bold">DDGG 댕찬가게</p>
+        <p className="font-bold">DCGG 댕찬가게</p>
 
         <MenuList />
       </Header>
